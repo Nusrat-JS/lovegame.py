@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Brownie ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div id="floatingHearts"></div>
+
+    <!-- Loading Screen -->
+    <section id="loadingScreen">
+
+        <div class="loaderHeart">❤️</div>
+
+        <h1>Loading Something Special...</h1>
+
+        <p>Made only for Brownie 🌸</p>
+
+    </section>
+
+
+    <!-- Welcome Screen -->
+    <section id="welcomeScreen" class="hidden">
+
+        <h1>Hello... 🌸</h1>
+
+        <h2>Who is visiting today?</h2>
+
+        <button id="brownieBtn">
+            ❤️ I'm Brownie
+        </button>
+
+        <button id="otherBtn">
+            🤨 Someone Else
+        </button>
+
+        <p id="warningText"></p>
+
+    </section>
+
+
+    <!-- Intro Story -->
+    <section id="storyScreen" class="hidden">
+
+        <h1>Before We Begin...</h1>
+
+        <div id="storyText"></div>
+
+        <button id="storyNext">
+            Continue ❤️
+        </button>
+
+    </section>
+
+
+    <!-- Mini Game -->
+    <section id="gameScreen" class="hidden">
+
+        <h1>Catch 10 Hearts ❤️</h1>
+
+        <p>
+            Collect all the hearts to unlock your surprise.
+        </p>
+
+        <h2 id="score">
+            0 / 10
+        </h2>
+
+        <div id="gameArea">
+
+            <div id="player">
+                ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Photo Gallery -->
+    <section id="galleryScreen" class="hidden">
+
+        <h1>Our Favorite Memories 📸</h1>
+
+        <div class="gallery">
+
+            <img src="assets/images/Brownie1.jpg" alt="Brownie">
+
+            <img src="assets/images/Brownie2.jpg" alt="Brownie">
+
+            <img src="assets/images/Brownie3.jpg" alt="Brownie">
+
+            <img src="assets/images/Brownie4.jpg" alt="Brownie">
+
+        </div>
+
+        <button id="galleryNext">
+            Continue ❤️
+        </button>
+
+    </section>
+
+
+    <!-- Love Letter -->
+    <section id="letterScreen" class="hidden">
+
+        <h1>To My Brownie 💌</h1>
+
+        <div id="letterText"></div>
+
+        <button id="letterNext">
+            One Last Surprise ✨
+        </button>
+
+    </section>
+
+
+    <!-- Ending -->
+    <section id="endingScreen" class="hidden">
+
+        <h1>
+            Happy Birthday Brownie ❤️
+        </h1>
+
+        <div id="bigHeart">
+            ❤️
+        </div>
+
+        <img id="memoryPhoto"
+            src="assets/images/Brownie1.jpg"
+            alt="Brownie">
+
+        <p id="loveMessage"></p>
+
+        <button id="restartBtn">
+            Read Again ❤️
+        </button>
+
+    </section>
+
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+
+        <source src="assets/music/birthday.mp3" type="audio/mpeg">
+
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffd1dc,#ffe9f1);
+    overflow:hidden;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hidden{
+    display:none !important;
+}
+
+section{
+    width:100%;
+    max-width:900px;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    color:#d63384;
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+p{
+    color:#7b2957;
+    font-size:1.2rem;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:40px;
+    background:#ff4f8b;
+    color:white;
+    font-size:1.1rem;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(255,79,139,.35);
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+#score{
+    font-size:28px;
+    color:#d63384;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+#gameCanvas{
+    width:100%;
+    max-width:700px;
+    height:420px;
+    border-radius:25px;
+    background:white;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+#controls{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:80px 80px 80px;
+    justify-content:center;
+    gap:12px;
+}
+
+#up{
+    grid-column:2;
+}
+
+#left{
+    grid-column:1;
+}
+
+#down{
+    grid-column:2;
+}
+
+#right{
+    grid-column:3;
+}
+
+#controls button{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    font-size:28px;
+}
+
+#bigHeart{
+    font-size:140px;
+    animation:heartbeat 1s infinite;
+}
+
+@keyframes heartbeat{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.2);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+#loveMessage{
+
+    max-width:700px;
+    margin:30px auto;
+    font-size:1.4rem;
+    color:#a00056;
+
+}
+
+#hearts{
+
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+
+}
+
+.floatingHeart{
+
+    position:absolute;
+    bottom:-40px;
+    font-size:24px;
+    animation:floatUp linear forwards;
+
+}
+
+@keyframes floatUp{
+
+    from{
+
+        transform:translateY(0);
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(-110vh);
+        opacity:0;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    #gameCanvas{
+
+        height:300px;
+
+    }
+
+    #controls button{
+
+        width:60px;
+        height:60px;
+
+    }
+
+}
+#memoryPhoto{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid white;
+    margin:25px auto;
+    display:block;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    animation:heartbeat 2s infinite;
+}
+
+.typewriter{
+    white-space:pre-line;
+    min-height:220px;
+}
